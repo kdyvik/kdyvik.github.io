@@ -1,0 +1,11 @@
+html{
+    min-height: 100%;
+}
+
+.content{
+    min-height: 900px;
+}
+
+p{
+    font-size: 25px;
+}

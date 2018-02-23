@@ -1,0 +1,73 @@
+body,html{
+    margin:0;
+    background-color: #545559;
+}
+
+html{
+    position: relative;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: #242528;
+    overflow: auto;
+}
+
+.top-bar a {
+    float: left;
+    width: 80px;
+    height: 100%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.top-bar a:hover {
+    background-color: #000;
+}
+
+
+#top-bar-right {
+    float:right;
+}
+
+.active {
+    background-color: #57b2a0;
+}
+
+h1{
+    font-size: 80px;
+    margin:0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: "Courier New";
+    margin:0;
+}
+
+p, li{
+    font-family: "Arial";
+}
+
+footer {
+    position: absolute;
+    background-color: #424549;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    color:white;
+}
+footer p{
+    font-size: 15px;
+}
+
+.content {
+    margin: 0px auto;
+    padding: 10px 200px 70px;
+    width: 50%;
+    display: block;
+    background-color: #FFFFFF;
+}

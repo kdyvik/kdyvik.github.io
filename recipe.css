@@ -1,0 +1,32 @@
+img {
+    margin:0;
+    width: 100%;
+    display: block;
+}
+
+h1{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    border-style: solid;
+    border-width: medium;
+    padding: 20px 40px;
+    width:300px;
+    background-color: rgba(87, 178, 160, 0.20);
+    float: right;
+}
+
+li, ul p{
+    font-size: 22px;
+}
+
+ul p{
+    margin: 0;
+}
+
+.content{
+    padding-bottom: 300px;
+}
