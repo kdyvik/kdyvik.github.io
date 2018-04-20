@@ -6,6 +6,43 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+        function validateForm() {
+            var x = document.forms["register"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            x = document.forms["register"]["femail"].value;
+            if (x == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            x = document.forms["register"]["fcity"].value;
+            if (x == "") {
+                alert("City must be filled out");
+                return false;
+            }
+            x = document.forms["register"]["frecipeName"].value;
+            if (x == "") {
+                alert("Recipe name must be filled out");
+                return false;
+            }
+            x = document.forms["register"]["fingredients"].value;
+            if (x == "") {
+                alert("Ingredients must be filled out");
+                return false;
+            }
+            x = document.forms["register"]["frecipe"].value;
+            if (x == "") {
+                alert("Recipe must be filled out");
+                return false;
+            }
+            else {
+                alert("This form was submitted");
+            }
+        }
+        </script>
     </head>
     <body>
         <nav class="top-bar">
@@ -17,15 +54,20 @@
             <h1>Contact us</h1>
             <p>To contact, send us an email to: <a href="mailto:klausdy@stud.ntnu.no">klausdy@stud.ntnu.no</a>
             </p>
-            <p>If you want to submit a recipe, use this format:</p>
-            <h2>Name:</h2>
-            <h2>City:</h2>
-            <h2>Recipe name:</h2>
-            <h2>Ingredients:</h2>
-            <h2>Recipe:</h2>
-            <h2>Other info:</h2>
+            <p>If you want to submit a recipe, use this form:</p>
+            <form id="register" name="register" onsubmit="return validateForm()" method="post">
+                <h2>Name:</h2><input class="small" type="text" name="fname">
+                <h2>Email:</h2><input class="small" type="text" name="femail">
+                <h2>City:</h2><input class="small" type="text" name="fcity">
+                <h2>Recipe name:</h2><input class="small" type="text" name="frecipeName">
+                <h2>Ingredients:</h2><textarea rows="4" cols="50" form="register" name="fingredients"></textarea>
+                <h2>Recipe:</h2><textarea rows="4" cols="50" form="register" name="frecipe"></textarea>
+                <h2>Other info:</h2><textarea rows="4" cols="50" form="register" name="fother"></textarea>
+                <input type="submit" value="Submit">
+            </form>
         </section>
         <footer>
+            
             <p>&copy; 2018, Klaus Dyvik</p>
         </footer>
     </body>

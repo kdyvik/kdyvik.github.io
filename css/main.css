@@ -71,3 +71,16 @@ footer p{
     display: block;
     background-color: #FFFFFF;
 }
+
+form {
+    margin: 10px;
+}
+
+textarea {
+    width:75%;
+    height:250px;
+}
+
+.small {
+    width:75%;
+}
